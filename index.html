@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+    <div class="main">
+        <div class="backTop">
+            &#xe650;
+        </div>    
+        <div class="header">
+            <div class="back f-l"><a href="#">&#xe61a;</a></div>
+            <div class="menu f-r"><a href="#">&#xe60a;</a></div>
+            <div class="title">365家居网络直播间</div>
+        </div>
+        
+        <div class="share-alert">
+            <div class="share-link">
+                <div class="head">
+                    分享到
+                </div>
+                <div class="linkDetial">
+                    <div class="circle">
+                        &#xe638;
+                    </div>
+                    微信
+                </div>
+                <div class="linkDetial">
+                    <div class="circle">
+                        &#xe66b;
+                    </div>
+                    QQ空间
+                </div>
+                <div class="linkDetial">
+                    <div class="circle">
+                        &#xe644;
+                    </div>
+                    新浪微博
+                </div>
+                <div class="linkDetial">
+                    <div class="circle">
+                        &#xe642;
+                    </div>
+                    腾讯微博
+                </div>
+                <div class="linkDetial">
+                    <div class="circle">
+                        &#xe625;
+                    </div>
+                    百度
+                </div>
+                <div class="cancel">
+                    取消分享
+                </div>
+            </div>
+        </div>
+        <div class="main-top">
+            <div class="picture">
+                <img src="./images/img1.jpg" alt="">
+            </div>
+            <div class="about">
+                <div class="time">2015-10-10 17:38:56</div>
+                <div class="end">已结束</div>
+                <div class="share">
+                    <a href="#">&#xe62c;    分享</a>
+                </div>
+
+            </div>
+        </div>
+       <div class="swiper-container">
+           <div class="nav ">
+                <div class="navMenu">直播</div>
+                <div class="navMenu">简介</div>
+                <div class="navMenu">问题/评论</div>
+                <div class="navMenu">提问</div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="main-detail swiper-wrapper">
+            
+            <div class="swiper-scrollbar"></div>
+            <div class="content swiper-slide">
+                <p>暂无直播</p>
+            </div>
+            <div class="content swiper-slide">
+                <div class="text">
+                    近日，年度南京首个家装大型公益系列主题活动“南京家居口碑调查R26;2013为家精挑细选”正式拉开帷幕，权威专家与专业媒体全程出击，精心挑选口碑优秀、质量过硬的家居建材品牌，一解你的装修燃眉之急，为广大装修家庭送上实在福利。
+  
+                </div>
+
+            </div>
+            <div class="content swiper-slide">
+                <div class="comment">
+                    <div class="commentId">
+                        【365网友】
+                    </div>
+                    <div class="commentTime">
+                        2015-10-10 17:38:56
+                    </div>
+                    <div class="commentDetail">
+                        如果你不努力一定不成功，如果努力了，就成功了一半，希望我们都能度过一个愉快的时光。
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="commentId">
+                        【365网友】
+                    </div>
+                    <div class="commentTime">
+                        2015-10-10 17:38:56
+                    </div>
+                    <div class="commentDetail">
+                        如果你不努力一定不成功，如果努力了，就成功了一半，希望我们都能度过一个愉快的时光。
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="commentId">
+                        【365网友】
+                    </div>
+                    <div class="commentTime">
+                        2015-10-10 17:38:56
+                    </div>
+                    <div class="commentDetail">
+                        很好很好
+                    </div>
+                </div>
+            </div>
+            <div class="content swiper-slide">
+                <div class="text">
+                   <form>
+                       <textarea name="text" rows="8">             
+	                </textarea>
+                   
+                    
+                </div>
+                <div class="btn1">
+                    <input type="submit" value="提    交">
+                </div>
+                <div class="btn2">
+                    <input type="reset" value="清    空">
+                </div>
+                </form>
+            </div>
+        </div>
+</div>
+
+    </div>
+        <div class="footer">
+            <div>Copyright©2015 356淘房 版权所有</div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+
+    $(".navMenu").click(function(){
+        var i = $(this).index();
+        $(".swiper-pagination-bullet").eq(i).click();
+        if(i == 3){
+             $(".backTop").hide();
+        }else{
+            $(".backTop").show();
+        }
+        
+    })
+    var  w_h = $(window).height() ;
+    var imgh = $("img").height();
+    $(".swiper-slide").eq(0).css({"height":w_h - imgh - 180}); 
+    $(".share-alert").css({'height':w_h});
+    $(window).load(function(){
+      var img_h = $("img").height();
+    $(".swiper-slide").css({"min-height":w_h - img_h - 180});
+        $('.text').css({"min-height":w_h - img_h - 280});
+    })
+   
+    //初始化文本一个tab
+    $("textarea").html("    ");
+    
+    
+    
+//分享弹窗界面
+    $(".share").click(function(){
+        $(".share-alert").fadeIn();
+        $('main').css({'height':w_h,'overflow':'hidden'});
+        $("body").addClass("h");
+    })
+    $(".cancel").click(function(){
+         $(".share-alert").fadeOut();
+         $('main').css({'height':'auto'});
+        $("body").removeClass("h");
+    })    
+    
+    //回顶部
+     $(".backTop").click(function(){
+         scroll(0,0)
+     })
+//    var h = $
+//    $(".backTop").css({})
+    //滑动
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        autoHeight: true, //enable auto height
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,245 @@
+body.h {
+  overflow: hidden; }
+
+.main {
+  width: 100%;
+  position: relative; }
+  .main .backTop {
+    background: rgba(0, 0, 0, 0.2);
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    z-index: 10000; }
+  .main .header {
+    width: auto;
+    height: 44px;
+    background: #ec6c00;
+    line-height: 44px;
+    color: #fff;
+    font-size: 18px; }
+    .main .header a {
+      font-size: 18px;
+      color: #fff; }
+    .main .header .back {
+      margin-left: 10px; }
+    .main .header .menu {
+      margin-right: 10px; }
+    .main .header .title {
+      text-align: center;
+      width: auto;
+      margin-right: 50px; }
+  .main .share-alert {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 100; }
+    .main .share-alert .share-link {
+      height: 264px;
+      background: #fff;
+      margin: 0 35px;
+      margin-top: -132px;
+      width: auto;
+      border-radius: 8px;
+      position: relative;
+      top: 50%; }
+      .main .share-alert .share-link .head {
+        background: #eeeeee;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 8px 8px 0 0;
+        color: #000; }
+      .main .share-alert .share-link .linkDetial {
+        width: 33.3%;
+        height: 90px;
+        text-align: center;
+        font-size: 15px;
+        float: left; }
+        .main .share-alert .share-link .linkDetial .circle {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 40px;
+          color: #fff;
+          font-size: 28px;
+          margin: 0 auto;
+          margin-top: 15px;
+          cursor: pointer; }
+      .main .share-alert .share-link .linkDetial:nth-child(2) .circle {
+        background: #51b341;
+        font-size: 22px; }
+      .main .share-alert .share-link .linkDetial:nth-child(3) .circle {
+        background: #ffbf00; }
+      .main .share-alert .share-link .linkDetial:nth-child(4) .circle {
+        background: #d42c4c; }
+      .main .share-alert .share-link .linkDetial:nth-child(5) .circle {
+        background: #4bbbd9; }
+      .main .share-alert .share-link .linkDetial:nth-child(6) .circle {
+        background: #508bff; }
+      .main .share-alert .share-link .cancel {
+        height: 40px;
+        border-top: 1px solid #d9d9d9;
+        text-align: center;
+        line-height: 40px;
+        font-size: 16px;
+        width: 100%;
+        position: absolute;
+        bottom: 3px;
+        color: #ec6c00;
+        cursor: pointer; }
+  .main .main-top {
+    background: #fff;
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px; }
+    .main .main-top .picture img {
+      width: 100%;
+      margin-top: 0px; }
+    .main .main-top .about {
+      height: 40px;
+      line-height: 40px;
+      font-size: 12px;
+      color: #999999; }
+      .main .main-top .about .time {
+        height: 40px;
+        float: left;
+        margin-left: 20px;
+        margin-right: 30px; }
+      .main .main-top .about .share {
+        float: right;
+        margin-right: 10px; }
+        .main .main-top .about .share a {
+          color: #ec6c00; }
+      .main .main-top .about .end {
+        float: left; }
+  .main .nav {
+    border-top: 1px solid #d9d9d9; }
+    .main .nav .navMenu {
+      width: 25%;
+      height: 35px;
+      margin: 0;
+      float: left;
+      background: #fff;
+      line-height: 35px;
+      text-align: center;
+      cursor: pointer; }
+  .main .swiper-container {
+    overflow-x: hidden;
+    height: auto;
+    overflow-y: hidden; }
+    .main .swiper-container .swiper-pagination .swiper-pagination-bullet {
+      width: 25%;
+      height: 2px;
+      margin: 0;
+      float: left;
+      background: #fff;
+      line-height: 35px;
+      text-align: center; }
+    .main .swiper-container .main-detail {
+      background: #fff;
+      margin-top: 15px;
+      height: auto; }
+      .main .swiper-container .main-detail .swiper-slide {
+        width: auto;
+        height: auto;
+        background: #fff;
+        z-index: 0; }
+      .main .swiper-container .main-detail .swiper-slide:nth-child(2) p {
+        margin: 15px 0 0 15px; }
+      .main .swiper-container .main-detail .swiper-slide:nth-child(3) .text {
+        padding: 0 15px;
+        width: auto;
+        color: #404040;
+        font-size: 15px;
+        line-height: 30px;
+        margin-top: 20px; }
+      .main .swiper-container .main-detail .swiper-slide:nth-child(4) .comment:nth-child(3) {
+        border: none; }
+      .main .swiper-container .main-detail .swiper-slide:nth-child(4) .comment {
+        padding: 0 15px 20px 15px;
+        border-bottom: 1px dashed #f1f1f1; }
+        .main .swiper-container .main-detail .swiper-slide:nth-child(4) .comment .commentId {
+          color: 404040;
+          height: 40px;
+          line-height: 40px; }
+        .main .swiper-container .main-detail .swiper-slide:nth-child(4) .comment .commentTime {
+          height: 15px;
+          line-height: 15px;
+          font-size: 12px;
+          color: #999999; }
+        .main .swiper-container .main-detail .swiper-slide:nth-child(4) .comment .commentDetail {
+          font-size: 16px;
+          margin-top: 10px; }
+      .main .swiper-container .main-detail .swiper-slide:nth-child(5) .text {
+        margin: 0 15px;
+        width: auto;
+        margin-top: 10px;
+        height: 140px;
+        border: 1px solid #d9d9d9;
+        margin-bottom: 22px; }
+        .main .swiper-container .main-detail .swiper-slide:nth-child(5) .text textarea {
+          width: 100%;
+          height: 100%;
+          border: none;
+          outline: none;
+          resize: none;
+          font-size: 14px; }
+      .main .swiper-container .main-detail .swiper-slide:nth-child(5) .btn1 {
+        width: 140px;
+        height: 40px;
+        background: #ec6c00;
+        border-radius: 4px;
+        margin-left: 12px;
+        float: left; }
+        .main .swiper-container .main-detail .swiper-slide:nth-child(5) .btn1 input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          color: #fff;
+          background: none;
+          font-size: 18px;
+          cursor: pointer;
+          outline: none; }
+      .main .swiper-container .main-detail .swiper-slide:nth-child(5) .btn2 {
+        width: auto;
+        height: 40px;
+        background: #c0c0c0;
+        border-radius: 4px;
+        margin-left: 170px;
+        margin-right: 12px; }
+        .main .swiper-container .main-detail .swiper-slide:nth-child(5) .btn2 input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          color: #fff;
+          background: none;
+          font-size: 18px;
+          cursor: pointer;
+          outline: none; }
+
+.footer {
+  margin-top: 0;
+  height: 15px;
+  line-height: 40px;
+  text-align: center;
+  color: #808080;
+  border-top: #d9d9d9;
+  font-size: 12px; }
+
+body {
+  background: #eeeeee; }
+
+/*# sourceMappingURL=index.css.map */

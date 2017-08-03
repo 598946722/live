@@ -1,0 +1,42 @@
+.w980{
+	width:980px;
+	margin:0px auto;
+}
+.f-l{
+	float:left;
+}
+.f-r{
+	float:right;
+}
+a{
+	color:#898989;
+	text-decoration:none;
+	font-size:12px;
+}
+a:hover {
+	text-decoration:none; 
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ul li {
+	list-style:none;
+}
+ body,html{
+	height: 100%;
+	font-family: 'iconfont','微软雅黑';
+     user-select: none;
+} 
+/*手机端页面专用*/
+
+@media screen and (min-width:768px){
+			body{
+				width: 768px;margin:0px auto;	
+			}
+		}
+@media screen and (max-width:320px){
+			body{
+				width: 320px;margin:0px auto;	
+			}
+		}
